@@ -1,0 +1,217 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+header, h1, h2, h3, h4 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    text-decoration: none;
+    display: inline;
+}
+
+body {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+p {
+    font-family: Roboto, sans-serif;
+    text-align: justify;
+}
+
+footer {
+    opacity: 0.2;
+    margin: 0;
+    justify-content: baseline;
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Navbar Section */
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container ul {
+    display: flex;
+    list-style: none;
+}
+
+.container li {
+    padding-left: 15px;
+}
+
+.container a:hover {
+    color:rgb(138, 67, 67)
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        text-align: center;
+    }
+
+    .nav-container {
+        flex-direction: column;
+    }
+}
+
+
+/* DO NOT ADD HEIGHT!  */
+/* For some reason, when I added height, it messed up the flow of my webpage */
+.intro {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    width: 50rem;
+    height: 11rem;
+}
+
+.intro p {
+    overflow-wrap: break-word;
+}
+
+    
+/* hyperlink to the email */
+.intro p a {
+    color: rgb(138, 67, 67);
+    font-style: italic;
+}
+
+.intro p {
+    text-align: center;
+}
+
+.intro div {
+    width: 50rem;
+    height: 10em;
+}
+
+/* avatar img */
+.avatar {
+    vertical-align: middle;
+    width: 5.5rem;
+    height: 5.5rem;
+    padding: 1rem;  
+    border-radius: 50%;
+}
+
+/* sm = Social Media */
+/* Icon Style for sm */
+/* SM section */
+.sm {
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1.5rem;
+    width: 50rem;
+    font-size: 15px;
+}
+
+.sm :hover {
+    cursor: pointer;
+}
+
+.smIcon {
+    width: 100%;
+    max-width: 2rem;
+    height: 100%;
+    max-height: 2rem;
+    margin: 0 auto;
+}
+
+#smIg{
+    margin: 0 auto;
+}
+
+#smIg:hover {
+    opacity: 0.5;
+    border-radius: 200%;
+    box-shadow: 0 0 24px 0 #dd4b39;
+    transform: translateY(-10px);
+}
+
+#smTweet {
+    margin: 0 auto;
+}
+
+#smTweet:hover {
+    opacity: 0.5;
+    border-radius: 200%;
+    box-shadow: 0 0 24px 0 #057fac;
+    transform: translateY(-10px);
+
+}
+
+#smLinkD {
+    margin: 0 auto;
+}
+
+#smLinkD:hover {
+    opacity: 0.5;
+    border-radius: 200%;
+    box-shadow: 0 0 24px 0 #002d3d;
+    transform: translateY(-10px);
+}
+
+/* End SM section */
+
+
+/* Project section */
+.justify-center {
+    text-align: center;
+  }
+  
+  .project {
+    margin: 0 auto;
+    padding: 10px;
+    width: 100%;
+    height: 30rem;
+  }
+  
+  .projectCards {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+  }
+  
+  .projectCards a {
+    background: rgb(145, 145, 133);
+    margin-left: -9.1rem;
+  }
+  
+  .projectCards img {
+      margin-bottom: -9.5em;
+  }
+
+  .projectCards h4:hover{
+    transform: translateY(-8px);
+  }
